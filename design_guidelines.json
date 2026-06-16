@@ -1,0 +1,121 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Luxury) mixed with Technical/Construction",
+  "typography": {
+    "fonts": {
+      "heading": "Outfit, sans-serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white",
+      "h2": "text-4xl sm:text-5xl font-bold tracking-tight text-white",
+      "h3": "text-2xl sm:text-3xl font-semibold text-white",
+      "h4": "text-xl font-semibold text-white",
+      "body": "text-base sm:text-lg text-zinc-400 leading-relaxed",
+      "label": "text-sm uppercase tracking-[0.2em] text-zinc-500 font-semibold"
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#0A0A0B",
+      "surface": "#121214",
+      "surface_hover": "#18181B"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "muted": "#71717A"
+    },
+    "brand": {
+      "fiber_cyan": "#00E5FF",
+      "industrial_amber": "#FFB800",
+      "fiber_purple": "#8A2BE2"
+    },
+    "borders": {
+      "default": "rgba(255, 255, 255, 0.1)",
+      "highlight": "rgba(255, 255, 255, 0.2)"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-6 lg:px-8",
+    "section_padding": "py-24 lg:py-32",
+    "grid_gap": "gap-8 lg:gap-12"
+  },
+  "surface_strategies": {
+    "glassmorphism": "bg-black/40 backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]",
+    "service_card": "relative group overflow-hidden bg-[#121214] border border-white/5 hover:border-white/20 transition-colors duration-500 rounded-2xl p-8"
+  },
+  "animations": {
+    "hover_button": "transition-all duration-300 hover:scale-105 active:scale-95",
+    "scroll_reveal": "initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }}",
+    "card_hover": "hover:-translate-y-2 transition-transform duration-500 ease-out"
+  },
+  "components": {
+    "hero": {
+      "layout": "min-h-screen flex items-center justify-start relative pt-20",
+      "overlay": "absolute inset-0 bg-gradient-to-r from-[#0A0A0B] via-[#0A0A0B]/80 to-transparent z-10",
+      "content_alignment": "left",
+      "instructions": "Place the background video/image covering the full viewport. Content sits above the overlay gradient so text is highly legible."
+    },
+    "services": {
+      "layout": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+      "card_style": "Dark Neumorphic/Glass hybrid. Use Industrial Amber for heavy construction icons (Tiefbau, Asphalt) and Fiber Cyan for digital icons (Glasfaser, Kabelverlegung)."
+    },
+    "projects_portfolio": {
+      "layout": "masonry grid (columns: 1 on mobile, 2 on tablet, 3 on desktop)",
+      "hover_effect": "Image scales up slightly (scale-105) while a dark gradient overlay reveals project title and 'View Project' arrow."
+    },
+    "video_showcase": {
+      "layout": "Full-width section with cinematic dark aesthetic.",
+      "features": "Scroll-triggered reveal of large video card. Autoplay muted on visibility. Uses framer-motion for smooth entry."
+    },
+    "contact": {
+      "layout": "grid grid-cols-1 lg:grid-cols-2 gap-16",
+      "elements": "Shadcn Form on left (styled dark: bg-transparent, border-white/10), Map and Contact details on right. Include a floating or prominent WhatsApp button (brand green #25D366)."
+    }
+  },
+  "media": {
+    "images": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1555832438-e6ada221ff4d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBoaWdod2F5JTIwYXNwaGFsdCUyMGNvbnN0cnVjdGlvbiUyMHN1bnNldHxlbnwwfHx8fDE3ODE2NDA1MTN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern highway construction at sunset (moody, premium)",
+        "placement": "Hero Section Background"
+      },
+      "abstract_fiber": {
+        "url": "https://images.unsplash.com/photo-1762278805026-9e0e673e5dc4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHw0fHxmaWJlciUyMG9wdGljJTIwY2FibGUlMjBnbG93aW5nJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzgxNjQwNTEzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract streaks of purple and green light (fiber optic)",
+        "placement": "Services Background or Video Showcase background texture"
+      },
+      "project_1": {
+        "url": "https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxjaXZpbCUyMGVuZ2luZWVyaW5nJTIwdHJlbmNoJTIwbW9kZXJufGVufDB8fHx8MTc4MTY0MDUxM3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Top view heavy equipment",
+        "placement": "Projects Masonry Grid"
+      },
+      "project_2": {
+        "url": "https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxkYXRhJTIwY2VudGVyJTIwc2VydmVyJTIwdGVjaG5pY2lhbnxlbnwwfHx8fDE3ODE2NDA1Mjl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Data center servers",
+        "placement": "Projects Masonry Grid (Glasfaser)"
+      },
+      "project_3": {
+        "url": "https://images.unsplash.com/photo-1672712791280-b67dfa4355a3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nJTIwY29ycG9yYXRlJTIwY29uc3RydWN0aW9ufGVufDB8fHx8MTc4MTY0MDUxM3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Construction Crane between buildings",
+        "placement": "Projects Masonry Grid"
+      },
+      "testimonial_bg": {
+        "url": "https://images.unsplash.com/photo-1581094368940-5a08c24fd0a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwzfHxjb25zdHJ1Y3Rpb24lMjB3b3JrZXIlMjBwb3J0cmFpdCUyMHN1bnNldHxlbnwwfHx8fDE3ODE2NDA1Mjl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Man in white helmet portrait",
+        "placement": "Testimonial or About Us Image"
+      }
+    }
+  },
+  "specific_instructions_for_agent": [
+    "Use Lucide React icons for the services: 'Tractor' or 'HardHat' for Tiefbau/Asphalt, 'Cable' or 'Network' for Glasfaser.",
+    "Implement the Header with sticky positioning and crystal glassmorphism.",
+    "The Hero CTA 'Request a Quote' (Angebot anfordern) should use a glowing border or solid Fiber Cyan background, while 'Contact Us' (Kontakt) should be an outline button.",
+    "Ensure all text remains readable by applying dark gradients behind text that sits over images.",
+    "Build the website using pure HTML/Tailwind for the marketing layouts (hero, bento grids) to allow maximum structural freedom, but use Shadcn UI for complex interactive parts like the Contact form or Image lightboxes.",
+    "Do NOT use pure #000000, rely on the provided #0A0A0B and #121214.",
+    "Add 'data-testid' to all buttons, links, and forms."
+  ]
+}
